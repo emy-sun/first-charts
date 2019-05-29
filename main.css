@@ -13,12 +13,16 @@ body {
   padding: 0;
 }
 
+/* .container{
+  background-color: #F1FAFF	;  
+} */
+
 .wrapper {
-  height: calc(95% - 4rem);
+  height: calc(90% - 4rem);
   width: calc(100% - 4rem);
   display: flex;
   flex-flow: column wrap;
-  margin: 2rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .container:nth-child(1) {
@@ -40,7 +44,7 @@ body {
 }
 
 .leg {
-  height: 5%;
+  height: 10%;
   width: 100%;
   margin: 0 0 0 0;
   text-align: center;
@@ -54,8 +58,8 @@ body {
 }
 
 .symbol {
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   margin-right: 10px;
   float: left;
   border-radius: 10px;
@@ -66,6 +70,10 @@ body {
   cursor: pointer;
 }
 
+#legend {
+  margin-right: 2.5rem;
+}
+
 .item {
   height: 40px;
   clear: both;
@@ -74,17 +82,26 @@ body {
 }
 
 .highcharts-tooltip>span {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid silver;
+  background: white;
   border-radius: 3px;
-  box-shadow: 1px 1px 2px #888;
+  border: 1px solid #EDFBFE;
+  box-shadow: 0px 4px 6px rgba(10, 82, 154, 0.2);
   padding: 8px;
 }
 
-.highcharts-label, span, b {
-    font-weight: normal !important;
-    color: #666666 !important;
-  }
+.highcharts-label,
+span,
+b {
+  font-weight: normal !important;
+  color: #666666 !important;
+}
 
+.title {
+  margin-bottom: 0.5rem;
+}
 
-
+.barLabels span{
+  color: white !important;
+  font-size: 0.75rem !important;
+  left: -0.75rem !important;
+}
