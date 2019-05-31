@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
 html {
-  height: 100vh;
+  height: calc(100vh - 3%);
   margin: 0;
   padding: 0;
 }
@@ -11,11 +11,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
 }
-
-/* .container{
-  background-color: #F1FAFF	;  
-} */
 
 .wrapper {
   height: calc(90% - 4rem);
@@ -25,19 +22,19 @@ body {
   margin: 2rem 2rem 2rem 2rem;
 }
 
-.container:nth-child(1) {
+.container1 {
   height: calc(50% - 1rem);
   width: calc(50% - 1rem);
   margin: 0 0.5rem 0.5rem 0;
 }
 
-.container:nth-child(2) {
+.container2 {
   height: 50%;
   width: calc(50% - 1rem);
   margin: 0.5rem 0.5rem 0 0;
 }
 
-.container:nth-child(3) {
+.container3 {
   height: 100%;
   width: 50%;
   margin: 0 0 0 0.5rem;
@@ -104,4 +101,41 @@ b {
   color: white !important;
   font-size: 0.75rem !important;
   left: -0.75rem !important;
+}
+
+#js_spinner {
+	text-align: center;
+	padding-top: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+ 
+.greenBlock {
+  background-color: green;
+  width: 100px;
+  height: 100px; 
+  z-index: 2;
+}
+
+.redBlock {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.blueBlock {
+  background-color: blue;
+  width: 100px;
+  height: 100px; 
+  z-index: 1;
 }
